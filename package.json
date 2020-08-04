@@ -10,6 +10,8 @@
   "dependencies": {
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-flexbox-grid": "^2.1.2",
+    "rsgui": "^2.0.2"
   }
 }
