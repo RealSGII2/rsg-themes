@@ -23,10 +23,12 @@ const Nav = [
 ]
 
 function MyApp({ Component, pageProps }) {
+	const [isOpen, setOpen] = React.useState(true)
+
 	return (
 		<div>
-			<Appbar title="r" />
-			<Layout drawerOpen simple>
+			<Appbar title="r" showMenu onMenuClick={() => setOpen(!isOpen)} />
+			<Layout drawerOpen={isOpen} onClose={() => setOpen(false)} simple>
 				<Layout.Drawer>
 					<List look="rounded">
 						{Nav.map(n => {
