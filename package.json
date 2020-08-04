@@ -12,6 +12,6 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-flexbox-grid": "^2.1.2",
-    "rsgui": "^2.0.2"
+    "rsgui": "^2.0.3"
   }
 }
