@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import 'rsgui/dist/index.css'
 import 'react-flexbox-grid/dist/react-flexbox-grid.css'
 
+// for fun
 const Nav = [
 	{
 		type: "link",
