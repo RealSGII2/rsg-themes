@@ -15,3 +15,32 @@
   left: -16px;
   width: calc(100% + 32px);
 }
+
+.container {
+  width: 813px;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.article {
+  border-radius: 8px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  width: calc(1100px);
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.a-head {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.075);
+  padding: 2rem;
+}
+
+.a-body {
+  padding: 2rem;
+}

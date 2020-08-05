@@ -2,47 +2,47 @@ import Head from 'next/head'
 import { Typography, ButtonToolbar, Button, Card, Badge } from 'rsgui'
 import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid';
 import styles from '../styles/Home.module.css'
+import { withRouter } from 'next/router';
+import Link from 'next/link';
 
-export default function Home() {
+const Pages = [
+	{
+		img: "",
+		name: "Don't ask to ask, just ask.",
+		description: "The worst possible thing you can do is ask to ask. Why not just ask your question instead?",
+		to: "/posts/dont-ask-to-ask"
+	}
+]
+
+export default withRouter(function Home({ router }) {
 	return (
-		<div>
+		<>
 			<Head>
-				<title>r</title>
+				<title>RSG Blog</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className={styles.hero}>
-				<Typography type="h1">
-					r
-				</Typography>
-				<Typography type="h5">
-					r
-				</Typography>
-				<ButtonToolbar>
-					<Button look="inverted">
-						r
-					</Button>
-					<Button color="light" look="outlined">
-						r
-					</Button>
-				</ButtonToolbar>
-			</div>
 			
-			<div className={styles.gridc}>
-				<Grid fluid>
-					<Row>
-						<Col xs={12} sm={6} md={4} lg={3}>
-							<Card title="r" bordered actions={[{label: "r"}]}>
-								<div style={{marginBottom: 10}}>
-									<Badge color="gray" look="ghost">
-										r
-									</Badge>
-								</div>
-								r
+			<div className={styles.container}>
+				<Typography type="h2">
+					Home
+				</Typography>
+
+				{Pages.map(p => {
+					const attr = {}
+
+					if (p.img !== "") attr.img = <img src={p.img} />
+
+					return (
+						<Link href={p.to}>
+							<Card elevated onClick={() => {}} style={{borderRadius:8,marginBottom:32}} title={p.name} {...attr}>
+								<p>
+									{p.description}
+								</p>
 							</Card>
-						</Col>
-					</Row>
-				</Grid>
+						</Link>
+					)
+				})}
 			</div>
-		</div>
+		</>
 	)
-}
+})

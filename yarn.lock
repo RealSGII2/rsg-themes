@@ -3622,6 +3622,11 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+next-seo@^4.7.3:
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.7.3.tgz#8da82dca4f425c84392c4a8462f215dfcb4195b0"
+  integrity sha512-hEl6fVbYU6h0EqGTqsVM3aEbn+ejlV7JjjIRLzT8at5TDxXQWs1Ypd0UA9oalHfVo7rDbWawD9rrvMe+PWl4kw==
+
 next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
@@ -4713,10 +4718,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rsgui@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/rsgui/-/rsgui-2.0.2.tgz#2beaf6056a2a5feb6dcdde7a8f320822c5fa1482"
-  integrity sha512-lceqkue6ZZGtERfVSlmr352ooCz05zfOZnuRugRWXyYTTAV7js+c606T+1usO0zQu+lKmNrGhnRFbRQJAmqxAw==
+rsgui@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/rsgui/-/rsgui-2.0.3.tgz#b1d1492c65a5b5a4938ed4ea4de619dd3bcf8300"
+  integrity sha512-SWt5xmU1H+LwAex1xlL1S9QmERGVmYhxBMLjha/DyinmXj7/WaSQmMgt1jSVt4NOwVyKhhcdc9v/zD9tMpNrSg==
 
 run-queue@^1.0.0, run-queue@^1.0.3:
   version "1.0.3"

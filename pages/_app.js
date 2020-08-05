@@ -7,19 +7,15 @@ import 'react-flexbox-grid/dist/react-flexbox-grid.css'
 // for fun
 const Nav = [
 	{
-		type: "link",
-		text: "r",
+		type: "ext-link",
+		text: "Back to main site",
 		to: "/"
 	},
 	{ type: "divider" },
 	{
-		type: "label",
-		text: "r"
-	},
-	{
-		type: "ext-link",
-		text: "r",
-		to: "https://git.realsgii2.dev/"
+		type: "link",
+		text: "Home",
+		to: "/"
 	}
 ]
 
@@ -27,8 +23,8 @@ function MyApp({ Component, pageProps }) {
 	const [isOpen, setOpen] = React.useState(true)
 
 	return (
-		<div>
-			<Appbar title="r" showMenu onMenuClick={() => setOpen(!isOpen)} />
+		<>
+			<Appbar title="RealSGII2 Blog" showMenu onMenuClick={() => setOpen(!isOpen)} />
 			<Layout drawerOpen={isOpen} onClose={() => setOpen(false)} simple>
 				<Layout.Drawer>
 					<List look="rounded">
@@ -62,7 +58,7 @@ function MyApp({ Component, pageProps }) {
 					<Component {...pageProps} />
 				</Layout.Content>
 			</Layout>
-		</div>
+		</>
   	)
 }
 
