@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+pre {
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 0.8rem 1rem;
+}
