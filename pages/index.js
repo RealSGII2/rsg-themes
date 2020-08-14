@@ -72,7 +72,7 @@ export default withRouter(function Home({ router, Projects }) {
 export const getServerSideProps = async (ctx) => {
 	let data = []
 
-	const res = await fetch('http://localhost:3000/api/themes')
+	const res = await fetch('http://themes.realsgii2.dev/api/themes')
 	console.log(res.body)
 	const _data = await res.json()
 	data = _data.data
