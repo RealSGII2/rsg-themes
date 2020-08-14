@@ -62,3 +62,76 @@
 .a-body {
   padding: 2rem;
 }
+
+.prog {
+  width: 100%;
+  height: 10px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.prog::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: calc(var(--per) - 100%);
+  z-index: 10;
+  background-color: #5093ad;
+  transition: all 200ms;
+}
+
+.prog.success::after {
+  background-color: #56ad50;
+}
+
+.prog.error::after {
+  background-color: #d13232;
+}
+
+.bottom-bar {
+  text-align: center;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 100%;
+  color: #d13232;
+  border: solid 1px #d13232;
+  padding: 1rem;
+  transition: all 150ms;
+  margin-bottom: 32px;
+}
+
+.bottom-bar.error {
+  background-color: #d13232;
+  color: #ffffff;
+}
+
+@keyframes shake {
+  0% { margin-top: 0; margin-left: 0; }
+  20% { margin-top: -5px; margin-left: 7px; }
+  40% { margin-top: -4px; margin-left: -7px; }
+  60% { margin-top: -5px; margin-left: 9px; }
+  80% { margin-top: -2px; margin-left: 4px; }
+  100% { margin-top: 0; margin-left: 0; }
+}
+
+.err {
+  animation: shake 100ms infinite;
+}
+
+.hidden {
+  pointer-events: none;
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  transition: top 700ms, opacity 700ms;
+}
+
+.hidden.show {
+  top: 0;
+  opacity: 1;
+  pointer-events: initial;
+}

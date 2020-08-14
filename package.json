@@ -1,5 +1,5 @@
 {
-  "name": "rsg-homepage",
+  "name": "rsg-resources",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "mongodb": "^3.6.0",
     "next": "9.5.1",
     "next-seo": "^4.7.3",
     "react": "16.13.1",
